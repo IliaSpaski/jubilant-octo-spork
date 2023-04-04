@@ -176,9 +176,21 @@ ul.navigation li {
   max-width: 100%;
 }
 
+.blockToo .lang {
+  margin-top: 5px;
+  width: 4vh;
+  height: 4vh;
+}
+
 @media screen and (max-width: 1024px) {
   .blockToo {
     gap: 8px;
+  }
+
+  .blockToo .lang {
+    margin-top: 6px;
+    width: 3vh;
+    height: 3vh;
   }
 }
 
