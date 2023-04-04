@@ -176,12 +176,6 @@ ul.navigation li {
   max-width: 100%;
 }
 
-.blockToo .lang {
-  margin-top: 5px;
-  width: 4vh;
-  height: 4vh;
-}
-
 @media screen and (max-width: 1024px) {
   .blockToo {
     gap: 8px;
@@ -474,7 +468,7 @@ ul.navigation li {
   transition: all 1s ease-in-out;
 }
 
-.tabcontent .active-content {
+.tabcontent.active-content {
   opacity: 1;
   transform: translateY(0);
   transition: all 1s ease-in-out;
