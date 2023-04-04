@@ -1,4 +1,5 @@
 @media screen and (max-width: 720px) {
+
   /* Указываем box sizing */
   *,
   *::before,
@@ -35,9 +36,9 @@
   }
 
   /* Выставляем основные настройки по-умолчанию для body */
-  
+
   html {
-  overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   body {
@@ -365,7 +366,6 @@
     width: 95%;
   }
 
-
   .tabcontent .tc1 .tc1_1 {
     padding: 5px;
   }
@@ -373,8 +373,6 @@
   .tabcontent .tc2 .tc2_1 {
     padding: 5px;
   }
-
-
 
   .characteristics {
     margin: 0 auto;
@@ -494,8 +492,6 @@
     padding-bottom: 20px;
   }
 
-
-
   .reviews h2 {
     padding-top: 35px;
     color: #0500388f;
@@ -504,14 +500,10 @@
     max-width: 90%;
   }
 
-
-
   .reviews h3 {
     color: #0500388f;
     font-size: 14px;
   }
-
-
 
   .reviews1 {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.089);
@@ -523,7 +515,6 @@
     box-shadow: 5px 5px rgba(0, 0, 0, 0.096);
     max-width: 90%;
   }
-
 
   .reviews3 {
     padding-top: 20px;
@@ -541,13 +532,10 @@
     background-color: #ffffff;
   }
 
-
-
   .reviews img {
     float: left;
     padding: 5px;
   }
-
 
   .users {
     background: #050038;
@@ -565,7 +553,6 @@
     font-size: 26px;
     color: #FFFFFF;
   }
-
 
   .users h2 {
     font-size: 18px;
@@ -704,23 +691,3 @@
     text-decoration: none;
   }
 }
-
-
-
-
-/*<a href=""></a>
-      color: #F0F0F0;
-      text-decoration: none;
-      Для ширины 1024 пикселей и меньше 
-      
-      @media screen and (max-width: 1024px) {
-      
-      }
-      @media screen and (max-width: 720px) {
-        
-      }
-      @media screen and (max-width: 500px) {
-        
-      }
-       Для ширины 600 пикселей и меньше 
-      */
