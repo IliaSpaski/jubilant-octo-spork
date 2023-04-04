@@ -113,6 +113,12 @@
     max-width: 100%;
   }
 
+  .blockToo .lang {
+    margin-top: 6px;
+    width: 3vh;
+    height: 3vh;
+  }
+
 
   .blockToo a {
     color: #F0F0F0;

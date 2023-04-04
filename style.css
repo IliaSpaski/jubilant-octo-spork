@@ -186,12 +186,6 @@ ul.navigation li {
   .blockToo {
     gap: 8px;
   }
-
-  .blockToo .lang {
-    margin-top: 6px;
-    width: 3vh;
-    height: 3vh;
-  }
 }
 
 .blockToo a {
