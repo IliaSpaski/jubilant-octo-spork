@@ -35,14 +35,8 @@
   }
 
   /* Выставляем основные настройки по-умолчанию для body */
-
-  html {
-    overflow-x: hidden;
-  }
-
   body {
     overflow-x: hidden;
-    width: 100%;
     min-height: 100%;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -56,6 +50,8 @@
   ol[class] {
     list-style: none;
   }
+
+
 
   /* Упрощаем работу с изображениями */
   img {
@@ -109,6 +105,7 @@
     gap: 18px;
     max-width: 100%;
   }
+
 
   .blockToo a {
     color: #F0F0F0;
@@ -230,6 +227,7 @@
     margin: 0 auto;
   }
 
+
   .img1 {
     animation-name: grow;
     animation-duration: 3s;
@@ -251,6 +249,8 @@
     }
   }
 
+
+
   .example__content {
     padding-top: 80px;
     padding-bottom: 85px;
@@ -260,9 +260,13 @@
     font-size: 28px;
   }
 
+
+
+
   .example__content1 p {
     font-size: 18px;
   }
+
 
   .example__content2 h2 {
     font-size: 28px;
@@ -273,6 +277,9 @@
     font-size: 18px;
     color: rgba(5, 0, 56, 0.6);
   }
+
+
+
 
   /* Style the tab */
   .tab {
@@ -298,6 +305,7 @@
     margin: 4px;
     transition: all 0.5s ease-in-out;
   }
+
 
   .tabcontent {
     opacity: 0;
@@ -490,10 +498,14 @@
     max-width: 90%;
   }
 
+
+
   .reviews h3 {
     color: #0500388f;
     font-size: 14px;
   }
+
+
 
   .reviews1 {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.089);
@@ -523,10 +535,13 @@
     background-color: #ffffff;
   }
 
+
+
   .reviews img {
     float: left;
     padding: 5px;
   }
+
 
   .users {
     background: #050038;
@@ -544,6 +559,7 @@
     font-size: 26px;
     color: #FFFFFF;
   }
+
 
   .users h2 {
     font-size: 18px;
@@ -683,3 +699,22 @@
   }
 }
 
+
+
+
+/*<a href=""></a>
+      color: #F0F0F0;
+      text-decoration: none;
+      Для ширины 1024 пикселей и меньше 
+      
+      @media screen and (max-width: 1024px) {
+      
+      }
+      @media screen and (max-width: 720px) {
+        
+      }
+      @media screen and (max-width: 500px) {
+        
+      }
+       Для ширины 600 пикселей и меньше 
+      */

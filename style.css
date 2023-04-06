@@ -56,7 +56,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 
@@ -570,7 +570,7 @@ ul.navigation li {
   text-decoration: underline;
 }
 
-.block1 p>a {
+.block1 p > a {
   color: #000000;
   text-decoration: none;
 }
@@ -745,7 +745,7 @@ ul.navigation li {
   padding-bottom: 40px;
 }
 
-.users p>a.sell {
+.users p > a.sell {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -779,7 +779,7 @@ ul.navigation li {
   background-color: #050038;
 }
 
-.columns p>a {
+.columns p > a {
   color: #f0f0f0;
   text-decoration: none;
 }
@@ -826,7 +826,6 @@ ul.navigation li {
   font-size: 15px;
   padding-bottom: 7px;
 }
-
 .columns a {
   padding: 3px;
 }
@@ -858,11 +857,11 @@ ul.navigation li {
 }
 
 .columns a {
-  background:
-    linear-gradient(#ffffff 0 0) 50% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
+  background: 
+     linear-gradient(#ffffff 0 0) 
+     50% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
   transition: 0.3s, background-size 0.3s 0.3s;
 }
-
 .columns a:hover {
   --d: 100%;
   background-position: 50% 0%;
@@ -946,7 +945,7 @@ ul.navigation li {
   }
 }
 
-.text_li p>a {
+.text_li p > a {
   color: #f0f0f0;
   text-decoration: none;
 }
@@ -962,3 +961,20 @@ ul.navigation li {
   color: #f0f0f0;
   text-decoration: none;
 }
+
+/*<a href=""></a>
+color: #F0F0F0;
+text-decoration: none;
+Для ширины 1024 пикселей и меньше 
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 720px) {
+  
+}
+@media screen and (max-width: 500px) {
+  
+}
+ Для ширины 600 пикселей и меньше 
+*/
