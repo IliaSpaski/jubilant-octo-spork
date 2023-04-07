@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>Miro by Ilya.S.</title>
     <!--Google fonts-->
@@ -12,13 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <!--Google fonts-->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <link href="style.css" rel="stylesheet">
     <link href="media.css" rel="stylesheet">
-    
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="index.js"></script>
 </head>
@@ -56,7 +59,7 @@
                     <div class="description">
                         <p>Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.</p>
                     </div>
-                    <button class="input"></button>
+                    <button class="input">Введите g-mail</button>
                     <button class="output"><a href="https://miro.com/signup/">Начать бесплатно</a></button>
                     <div class="description__free">
                         Всегда бесплатно — кредитная карта не нужна
@@ -159,12 +162,14 @@
                                 d="M20.2896 4.6665V5.05251C21.1085 5.50426 21.8785 6.03761 22.5922 6.6367L20.6686 8.59591C21.3943 9.17554 22.0494 9.84283 22.6197 10.5807L24.5409 8.62396C25.1303 9.35209 25.654 10.1375 26.0975 10.9595H26.467V4.6665H20.2884H20.2896Z"
                                 fill="#050038" />
                         </svg>
+
                     </div>
                 </div>
                 <div class="post-2">
                     <img class="headerimage" src="img/headerimage-without-text 1.png" alt="headerimage">
                 </div>
             </div>
+
 
             <div class="content">
                 <div class="description__content" data-aos="fade-up" data-aos-offset="75" data-aos-once="true">
@@ -193,7 +198,6 @@
                 <div class="example__content">
                     <div class="example__content1" data-aos="fade-right" data-aos-offset="75" data-aos-once="true"
                         data-aos-duration="1000">
-                        <!--  data-aos="fade-right"  data-aos-offset="75" data-aos-once="true" data-aos-duration="1000"-->
                         <h2>Подходит для вашего стиля работы</h2>
                         <div class="tab">
                             <button class="tablinks" onclick="openCity(event, 'Мозговые штурмы')">Мозговые
@@ -262,6 +266,7 @@
                             </div>
                         </div>
                         <div id="Дизайн-исследования" class="tabcontent">
+
                             <div class="tc1">
                                 <div class="tc1_1">
                                     <h3>Дизайн-исследования</h3>
@@ -273,6 +278,7 @@
                             </div>
                         </div>
                         <div id="Планирование" class="tabcontent">
+
                             <div class="tc1">
                                 <div class="tc1_1">
                                     <h3>Планирование</h3>
@@ -283,6 +289,8 @@
                                 <img class="img" src="img/Tab_con1_1.svg" alt="img">
                             </div>
                         </div>
+
+
                     </div>
                     <div class="example__content2" data-aos="fade-left" data-aos-offset="75" data-aos-duration="1000"
                         data-aos-once="true">
@@ -358,6 +366,7 @@
                             </div>
                         </div>
                         <div id="Agile-коучинг" class="tabcontent">
+
                             <div class="tc2">
                                 <div class="tc2_1">
                                     <h3>Agile-коучинг</h3>
@@ -383,6 +392,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
     </div>
 
@@ -423,7 +433,6 @@
             </main>
         </div>
     </div>
-
     <div class="container">
         <main>
             <div class="reviews__settings">
@@ -451,12 +460,15 @@
                                 d="M142.016 3.20321C141.999 2.14735 142.906 1.16733 143.963 1.14532C145.056 1.07041 146.078 2.00629 146.101 3.10814C146.119 4.68325 146.101 6.26022 146.108 7.83636C146.446 7.25367 146.725 6.63656 147.12 6.08744C148.789 3.65239 151.403 1.83063 154.317 1.30363C155.064 1.19523 155.897 1.05315 156.584 1.46586C157.79 2.14827 157.881 4.11884 156.768 4.9328C156.289 5.32733 155.656 5.36091 155.073 5.45205C152.995 5.81775 150.993 6.77089 149.504 8.28938C148.264 9.51026 147.39 11.0729 146.855 12.7248C146.279 14.511 146.073 16.4019 146.108 18.2746C146.108 21.2501 146.107 24.2255 146.108 27.201C146.115 27.7683 145.908 28.3451 145.503 28.7464C145.009 29.2685 144.219 29.4643 143.534 29.2704C142.862 29.1083 142.305 28.5631 142.109 27.9007C141.979 27.5206 142.021 27.1146 142.017 26.7211C142.017 18.8821 142.018 11.0431 142.016 3.20321Z"
                                 fill="#050038" />
                         </svg>
+
                         <h2>«Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды
                             пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался
                             идеальным инструментом для совместной работы в удаленном режиме».</h2>
+
                         <img class="reviews1" src="img/reviews1/IMAGE.svg" alt="reviews1">
                         <h3>Роксанна Мустафа</h3>
                         <h3>Design Team Lead в VMware</h2>
+
                     </div>
                     <div class="reviews2">
                         <svg width="193" height="44" viewBox="0 0 193 44" fill="none"
@@ -468,9 +480,11 @@
                         <h2>«Miro помогает решить проблему, связанную с основным пробелом в проектировании изделий:
                             позволяет управлять задачами с участием проектировщиков изделий, проекты которых реализуются
                             с помощью разных инструментов.»</h2>
+
                         <img class="reviews1" src="img/reviews2/IMAGE.svg" alt="reviews1">
                         <h3>Джейн Эшли</h3>
                         <h3>Директор по проектированию DocuSign</h3>
+
                     </div>
                     <div class="reviews3">
                         <svg width="89" height="55" viewBox="0 0 89 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -485,9 +499,12 @@
                         <img class="reviews1" src="img/reviews3/IMAGE.svg" alt="reviews1">
                         <h3>Лора Бейрд</h3>
                         <h3>Associate Design Director в frog</h3>
+
                     </div>
                 </div>
             </div>
+
+
 
             <div class="users" data-aos="fade-up" data-aos-offset="75" data-aos-once="true" data-aos-duration="1000">
                 <h1>Присоединяйтесь к 45M миллионам пользователей уже сегодня</h1>
@@ -497,9 +514,9 @@
                 <p><a class="sell" href="https://miro.com/contact/sales/">Свяжитесь с отделом продаж</a></p>
                 <button class="registration"><a href="https://miro.com/signup/">Зарегистрироваться</a></button>
             </div>
+
         </main>
     </div>
-
     <footer>
         <div class="footer">
             <div class="columns">
@@ -516,45 +533,45 @@
                 </div>
                 <div class="columns2">
                     <h1>Решения</h1>
-                    <P><a href="https://miro.com/ru/meetings-and-workshops/">Встречи и воркшопы</a></P>
-                    <P><a href="https://miro.com/ru/brainstorming/">Мозговой штурм</a></P>
-                    <P><a href="">Agile методы в работе</a></P>
-                    <P><a href="">Диаграмминг</a></P>
-                    <P><a href="">Исследование</a></P>
-                    <P><a href="">Стратегия и планирование</a></P>
-                    <P><a href="">Интеллект-карты</a></P>
-                    <P><a href="">Концептуальные карты</a></P>
-                    <P><a href="">Онлайн-стикеры</a></P>
-                    <P><a href="">Блок-схемы</a></P>
-                    <P><a href="">Вайрфреймы</a></P>
+                    <p><a href="https://miro.com/ru/meetings-and-workshops/">Встречи и воркшопы</a></p>
+                    <p><a href="https://miro.com/ru/brainstorming/">Мозговой штурм</a></p>
+                    <p><a href="https://miro.com/ru/agile/">Agile методы в работе</a>https://miro.com/ru/agile/</p>
+                    <p><a href="https://miro.com/ru/diagramming/">Диаграмминг</a></p>
+                    <p><a href="https://miro.com/ru/online-canvas-for-design/">Исследование</a></p>
+                    <p><a href="https://miro.com/ru/strategic-planning/">Стратегия и планирование</a></p>
+                    <p><a href="https://miro.com/ru/concept-map/">Интеллект-карты</a></p>
+                    <!--<p><a href="https://miro.com/ru/concept-map/">Концептуальные карты</a></p>-->
+                    <p><a href="https://miro.com/ru/sticky-notes/">Онлайн-стикеры</a></p>
+                    <p><a href="https://miro.com/ru/flowchart/">Блок-схемы</a></p>
+                    <p><a href="https://miro.com/ru/wireframe/">Вайрфреймы</a></p>
                 </div>
                 <div class="columns3">
                     <h1>Ресурсы</h1>
                     <p><a href="https://academy.miro.com/">Академия Miro</a></p>
                     <p><a href="https://help.miro.com/hc/en-us">Служба поддержки</a></p>
-                    <p><a href="">Блог</a></p>
-                    <p><a href="">Статус</a></p>
-                    <p><a href="">Cообщество Miro</a></p>
-                    <p><a href="">Miro Professional Network</a></p>
-                    <p><a href="">Miro Эксперты</a></p>
-                    <p><a href="">Мероприятия Miro</a></p>
+                    <p><a href="https://miro.com/blog/">Блог</a></p>
+                    <p><a href="https://status.miro.com/">Статус</a></p>
+                    <p><a href="https://miro.com/community/">Cообщество Miro</a></p>
+                    <p><a href="https://miro.com/experts/">Miro Professional Network</a></p>
+                    <p><a href="https://miro.com/newsroom/">Miro Эксперты</a></p>
+                    <p><a href="https://community.miro.com/events">Мероприятия Miro</a></p>
                 </div>
                 <div class="columns4">
                     <h1>Компания</h1>
                     <p><a href="https://miro.com/about/">О нас</a></p>
                     <p><a href="https://miro.com/careers/">Карьера 🚀</a></p>
-                    <p><a href="">Miro в новостях</a></p>
-                    <p><a href="">Истории клиентов</a></p>
+                    <p><a href="https://miro.com/newsroom/">Miro в новостях</a></p>
+                    <p><a href="https://miro.com/blog/customer-stories/">Истории клиентов</a></p>
                 </div>
                 <div class="columns5">
                     <h1>Тарифы и планы</h1>
                     <p><a href="https://miro.com/pricing/">Тарифы</a></p>
                     <p><a href="https://miro.com/business-plan/">Бизнес</a></p>
                     <p><a href="https://miro.com/ru/enterprise/">Предприятия</a></p>
-                    <p><a href="">Консультанты</a></p>
-                    <p><a href="">Образование</a></p>
-                    <p><a href="">Стартапы</a></p>
-                    <p><a href="">Некоммерческие организации</a></p>
+                    <p><a href="https://miro.com/consultants-agencies?lp=1/">Консультанты</a></p>
+                    <p><a href="https://miro.com/education-whiteboard/">Образование</a></p>
+                    <p><a href="https://miro.com/startups/">Стартапы</a></p>
+                    <p><a href="https://miro.com/npo/">Некоммерческие организации</a></p>
                 </div>
             </div>
             <div class="line"></div>
@@ -578,7 +595,6 @@
                     <p><a href="https://discordapp.com/users/CookieMan#2077">Управление файлами cookies</a></p>
                 </div>
             </div>
-
             <div class="qualitymark">
                 <a href="https://www.apple.com/store"><img src="img/links/AS.svg" alt="AS"></a>
                 <a href="https://play.google.com/store/games?hl=ru&gl=US"><img src="img/links/GP.svg" alt="GP"></a>

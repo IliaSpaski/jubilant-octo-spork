@@ -56,7 +56,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -176,12 +176,6 @@ ul.navigation li {
   max-width: 100%;
 }
 
-.blockToo .lang {
-  margin-top: 5px;
-  width: 4vh;
-  height: 4vh;
-}
-
 @media screen and (max-width: 1024px) {
   .blockToo {
     gap: 8px;
@@ -256,6 +250,7 @@ ul.navigation li {
   height: 48px;
   border: 1px solid #9b99af;
   border-radius: 32px;
+  color: #8b8b8b70;
 }
 
 .output {
@@ -474,7 +469,7 @@ ul.navigation li {
   transition: all 1s ease-in-out;
 }
 
-.tabcontent .active-content {
+.tabcontent.active-content {
   opacity: 1;
   transform: translateY(0);
   transition: all 1s ease-in-out;
@@ -576,7 +571,7 @@ ul.navigation li {
   text-decoration: underline;
 }
 
-.block1 p > a {
+.block1 p>a {
   color: #000000;
   text-decoration: none;
 }
@@ -751,7 +746,7 @@ ul.navigation li {
   padding-bottom: 40px;
 }
 
-.users p > a.sell {
+.users p>a.sell {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -785,7 +780,7 @@ ul.navigation li {
   background-color: #050038;
 }
 
-.columns p > a {
+.columns p>a {
   color: #f0f0f0;
   text-decoration: none;
 }
@@ -864,8 +859,8 @@ ul.navigation li {
 }
 
 .columns a {
-  background: linear-gradient(#ffffff 0 0) 50% calc(-3px - 100%) / var(--d, 0%)
-    200% no-repeat;
+  background:
+    linear-gradient(#ffffff 0 0) 50% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
   transition: 0.3s, background-size 0.3s 0.3s;
 }
 
@@ -952,7 +947,7 @@ ul.navigation li {
   }
 }
 
-.text_li p > a {
+.text_li p>a {
   color: #f0f0f0;
   text-decoration: none;
 }
