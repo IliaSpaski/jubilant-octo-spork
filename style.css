@@ -262,7 +262,7 @@ ul.navigation li {
 }
 
 .output a {
-  color: #f0f0f0;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -365,7 +365,7 @@ ul.navigation li {
   }
 }
 
-.img1 {
+.img {
   animation-name: grow;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
