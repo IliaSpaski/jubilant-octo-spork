@@ -6,21 +6,21 @@
     "background_color": "#fff",
     "description": "Miro by Ilya.S",
     "icons": [{
-      "src": "KGB-Archiver-192771.png",
+      "src": "./img/KGB-Archiver-192771.png",
       "sizes": "48x48",
-      "type": "img/png"
+      "type": "img "
     },{
-      "src": "1552221794_1033371706.png",
+      "src": "./img/KGB-Archiver-192771.png",
       "sizes": "96x96",
-      "type": "img/png"
+      "type": "img"
     },{
-      "src": "1552221794_1033371706.png",
+      "src": "./img/KGB-Archiver-192771.png",
       "sizes": "168x168",
-      "type": "img/png"
+      "type": "img"
     }, {
-      "src": "1552221794_1033371706.png",
+      "src": "./img/KGB-Archiver-192771.png",
       "sizes": "192x192",
-      "type": "img/png"
+      "type": "img"
     }],
     "related_applications": [{
       "platform": "web"
