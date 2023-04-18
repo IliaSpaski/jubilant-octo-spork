@@ -31,6 +31,7 @@
     <link href="media.css" rel="stylesheet">
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="index.js"></script>
+    //<script defer src="sw.js"></script>
 </head>
 
 <body>
@@ -608,6 +609,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        if ("serviceWorker" in navigator) {
+            self.addEventListener("load", async () => {
+                const container = navigator.serviceWorker;
+                if (container.controller === null) {
+                    const reg = await container.register("sw.js");
+                }
+            });
+        }
+    </script>
+    
 </body>
 
 </html>
