@@ -1,51 +1,42 @@
-'use strict';
+const cacheName = 'v1';
 
-self.addEventListener('fetch', hndlEventFetch);
+const cacheAssets = [
+    'index.html',
+    'sw.js',
+    'index.js',
+    'style.css',
+    'media.css',
+];
 
-function hndlEventInstall(evt) {
-    /**
-     * @returns {Promise<void>}
-     */
-    async function cacheStaticFiles() {
-        const files = [
-            './',
-            './png',
-            './index.html',
-            './sw.js',
-            './index.js',
-            './style.css',
-            './media.css',
-            './manifest.webmanifest',
-        ];
-        const cacheStat = await caches.open(CACHE_STATIC);
-        await Promise.all(
-            files.map(function (url) {
-                return cacheStat.add(url).catch(function (reason) {
-                    console.log(`'${url}' failed: ${String(reason)}`);
-                });
-            })
-        );
-    }
+// Call Install Event
+self.addEventListener('install', (e) => {
 
-    //  wait until all static files will be cached
-    evt.waitUntil(cacheStaticFiles());
-}
 
-function hndlEventFetch(evt) {
-    async function getFromCache() {
-        const cache = await self.caches.open(CACHE_STATIC);
-        const cachedResponse = await cache.match(evt.request);
-        if (cachedResponse) {
-            return cachedResponse;
-        }
-        // wait until resource will be fetched from server and stored in cache
-        const resp = await fetch(evt.request);
-        await cache.put(evt.request, resp.clone());
-        return resp;
-    }
+	e.waitUntil(
+		caches
+			.open(cacheName)
+			.then((cache) => {
+				cache.addAll(cacheAssets);
+			})
+			.then(() => self.skipWaiting()),
+	);
+});
 
-    evt.respondWith(getFromCache());
-}
+// Call Activate Event
+self.addEventListener('activate', (e) => {
+	// Remove unwanted caches
+	e.waitUntil(
+		caches.keys().then((cacheNames) => Promise.all(
+			cacheNames.map((cache) => {
+				if (cache !== cacheName) {
+					return caches.delete(cache);
+				}
+			}),
+		)),
+	);
+});
 
-self.addEventListener('install', hndlEventInstall);
-self.addEventListener('fetch', hndlEventFetch);
+// Call Fetch Event
+self.addEventListener('fetch', (e) => {
+	e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
+});
