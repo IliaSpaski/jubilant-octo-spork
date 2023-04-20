@@ -467,51 +467,6 @@
     text-decoration: none;
   }
 
-  .reviews {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    text-align: left;
-    justify-content: space-between;
-  }
-
-  .reviews__settings h1 {
-    font-size: 34px;
-    padding-bottom: 20px;
-  }
-
-
-
-  .reviews h2 {
-    padding-top: 35px;
-    color: #0500388f;
-    font-size: 14px;
-    padding-bottom: au;
-    max-width: 90%;
-  }
-
-  .reviews h3 {
-    color: #0500388f;
-    font-size: 14px;
-  }
-
-  .reviews1 {
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.089);
-    border-radius: 5px;
-  }
-
-  .reviews2 {
-    padding-top: 20px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.096);
-    max-width: 90%;
-  }
-
-
-  .reviews3 {
-    padding-top: 20px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.103);
-  }
 
   .history {
     width: 264px;
