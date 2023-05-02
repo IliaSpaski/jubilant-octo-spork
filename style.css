@@ -68,6 +68,17 @@ select {
   font: inherit;
 }
 
+
+body[data-theme="light"] {
+  background-color: white;
+}
+
+body[data-theme="dark"] {
+  background-color: rgb(5, 0, 29);
+  color: rgb(255, 255, 255);
+}
+
+
 /* preloader */
 .preloader {
   position: fixed;
@@ -123,9 +134,15 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #cfcfcf;
   padding: 20px;
   max-width: 100%;
+}
+
+body[data-theme="dark"] .header {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #050038;
+  color: #050038;
 }
 
 .navigation {
@@ -174,7 +191,9 @@ ul.navigation li {
   justify-content: space-between;
   gap: 88px;
   max-width: 100%;
+  align-items: center;
 }
+
 
 @media screen and (max-width: 1024px) {
   .blockToo {
@@ -615,6 +634,10 @@ ul.navigation li {
   height: 100%;
 }
 
+body[data-theme="dark"] .characteristics {
+  color: #050038;
+}
+
 .reviews__settings {
   text-align: center;
   margin: 0 auto;
@@ -644,6 +667,22 @@ ul.navigation li {
   text-align: left;
   justify-content: space-between;
   height: 100%;
+}
+
+body[data-theme="dark"] .reviews1 {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #050038;
+  color: #050038;
+}
+body[data-theme="dark"] .reviews2 {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #050038;
+  color: #050038;
+}
+body[data-theme="dark"] .reviews3 {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #050038;
+  color: #050038;
 }
 @media screen and (max-width: 1240px) {
 .reviews {
@@ -705,6 +744,9 @@ ul.navigation li {
   margin-right: 10px;
 }
 .reviews2{
+  margin-right: 10px;
+}
+.reviews3{
   margin-right: 10px;
 }
 .history {

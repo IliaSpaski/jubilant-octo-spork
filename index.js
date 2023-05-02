@@ -38,4 +38,13 @@ function openCity(evt, cityName) {
     }, 500);
   }
 
-  
+var toggle = document.getElementById("theme-toggle");
+var body = document.getElementsByTagName("body")[0];
+
+toggle.addEventListener('change', function() {
+  if (this.checked) {
+    body.setAttribute('data-theme', 'dark');
+  } else {
+    body.setAttribute('data-theme', 'light');
+  }
+});
